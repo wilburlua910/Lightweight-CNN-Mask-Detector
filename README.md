@@ -1,4 +1,4 @@
-# Covid-19 Human Face mask detection using deep learning and edge computing 
+# Real-Time Covid-19 Face mask detection: Edge Intelligence with YOLOv5, SSD, RetinaMask and EfficientDet
 
 Methodology
 
