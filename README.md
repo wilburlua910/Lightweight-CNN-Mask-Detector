@@ -1,7 +1,7 @@
 # Real-Time Covid-19 Face mask detection: Edge Intelligence with Convolutional Neural Network (CNN) and Single Shot Detectors
 
 
-![alt Face detection Image](https://github.com/wilburlua910/Capstone/img/fmd.png)
+![alt text](https://github.com/wilburlua910/Capstone/img/fmd.png)
 ## By: Wilbur Lua Kai Heng 
 
 Motivation 
