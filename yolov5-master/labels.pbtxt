@@ -1,0 +1,11 @@
+item {
+  name: "Incorrect Mask"
+  id: 0
+  display_name: "Incorrect Mask"
+}
+item {
+  name: "Correct Mask"
+  id: 1
+  display_name: "Correct Mask"
+}
+
