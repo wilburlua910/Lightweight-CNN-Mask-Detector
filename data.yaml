@@ -1,5 +1,5 @@
-train: ../train/images
-val: ../valid/images
+train: ../Dataset_MFN/CMFD_IMFD_v1/train
+val: ../Dataset_MFN/CMFD_IMFD_v1/valid
 
-nc: 3
-names: ['mask_weared_incorrect', 'with_mask', 'without_mask']
+nc: 2
+names: ['correct_mask', 'incorrect_mask']
