@@ -13,7 +13,7 @@ from torch.backends import cudnn
 from backbone import EfficientDetBackbone
 from efficientdet.utils import BBoxTransform, ClipBoxes
 from utils.utils import preprocess, invert_affine, postprocess, preprocess_video
-
+from VideoCaptureThreading import VideoCaptureThreaded
 # Video's path
 video_src = 0 # set int to use webcam, set str to read from a video file
 
@@ -36,7 +36,7 @@ input_size = input_sizes[compound_coef] if force_input_size is None else force_i
 
 # load model
 model = EfficientDetBackbone(compound_coef=compound_coef, num_classes=len(obj_list))
-model.load_state_dict(torch.load(f'weights/efficientdet-d0_49_2450.pth'))
+model.load_state_dict(torch.load(f'weights/efficientdet-d0_46_6900.pth'))
 model.requires_grad_(False)
 model.eval()
 
@@ -67,9 +67,11 @@ regressBoxes = BBoxTransform()
 clipBoxes = ClipBoxes()
 
 # Video capture
-cap = cv2.VideoCapture(video_src)
+# cap = cv2.VideoCapture(video_src)
+cap = VideoCaptureThreaded()
 
 while True:
+    cap.start()
     ret, frame = cap.read()
     frame = cv2.resize(frame, (512, 512))
 
@@ -112,6 +114,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'): 
         break
 
+cap.stop()
 cap.release()
 cv2.destroyAllWindows()
 
