@@ -15,6 +15,7 @@ Paper can be found here: ```./papers/PRAI.pdf```
 ## Motivation
 - Current "Traditional" detectors (E.g. VGG-16, VGG-19, ResNet-50) have high amounts of trainable parameters leading to high computations, memory and power consumption (CPU, GPU, Network). 
 - Contribute to Public Health and Safety applications by researching, experimenting and deploying an FMD system that can be deployed on the Edge (NVIDIA Jetson Nano)
+- Model Optimization, using Gradual Magnitude Pruning (GMP) algorithm to prune, quantize and re-train model using Sparsified transfer learning.
 - Edge Intelligence, bring Deep Learning onto Internet of Things (IoT) devices.
 
 # Explaination of Source Code
