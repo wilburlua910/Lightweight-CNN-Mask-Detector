@@ -1,24 +1,27 @@
 # Project Information 
 ##### This repository contains the source code, training scripts, and contents that is used to build, deploy the Capstone Project and the Conference papers.
 
-## Capstone Project Title
-<img src="https://github.com/wilburlua910/Capstone/blob/main/Demo.gif" width="500" height="300"/>
-
-<a href="https://youtu.be/2QZLPzKSKWU"> Youtube Link to Full Demonstration here </a>
-
+## Capstone Project
 ### Real-Time Covid-19 Face mask detection: Edge Intelligence with Convolutional Neural Network (CNN) and Single Shot Detectors
 Paper can be found here: ```./papers/(CSC3001_Capstone_Report__Final_Trimeter__Wilbur_Lua_Kai_Heng(1901839)```
 
-## Conference Title (Accepted into 2022 IEEE 5th International Conference on Pattern Recognition and Artificial Intelligence)
+<img src="https://github.com/wilburlua910/Capstone/blob/main/Demo.gif" width="500" height="300"/>
+<a href="https://youtu.be/2QZLPzKSKWU"> Youtube Link to Full Demonstration here </a>
+
+## Conference (Accepted into 2022 IEEE 5th International Conference on Pattern Recognition and Artificial Intelligence)
 ### Deep Learning in IoT and Edge Computing for Safety Applications
 Paper can be found here: ```./papers/PRAI.pdf```
-
-
 
 ## Motivation
 - Current "Traditional" detectors (E.g. VGG-16, VGG-19, ResNet-50) have high amounts of trainable parameters leading to high computations, memory and power consumption (CPU, GPU, Network). 
 - Contribute to Public Health and Safety applications by researching, experimenting and deploying an FMD system that can be deployed on the Edge (NVIDIA Jetson Nano)
 - Edge Intelligence, bring Deep Learning onto Internet of Things (IoT) devices.
+
+# Explaination of Source Code
+
+## Repository Breakdown 
+1. EfficientDet deployment codes are all under ```./EfficientDet```
+2. YOLOv5 deployment codes are all under ```./yolov5-master```
 
 ## Model training script are placed in ```/scripts/<Script_name>```
 
@@ -48,8 +51,3 @@ python3 detect.py --weights ./weights/CMFD_Best02.pt --source 0
 cd ./EfficientDet
 python3 efficientdet_test_videos.py
 ```
-
-
-
-
-
