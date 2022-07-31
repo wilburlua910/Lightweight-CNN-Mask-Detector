@@ -4,6 +4,8 @@
 ## Capstone Project Title
 <img src="https://github.com/wilburlua910/Capstone/blob/main/Demo.gif" width="500" height="300"/>
 
+<a href="https://youtu.be/2QZLPzKSKWU"> Youtube Link to Full Demonstration here </a>
+
 ### Real-Time Covid-19 Face mask detection: Edge Intelligence with Convolutional Neural Network (CNN) and Single Shot Detectors
 Paper can be found here: ```./papers/(CSC3001_Capstone_Report__Final_Trimeter__Wilbur_Lua_Kai_Heng(1901839)```
 
